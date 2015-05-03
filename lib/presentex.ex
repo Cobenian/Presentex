@@ -6,6 +6,15 @@ end
 
 defmodule Presentex do
 
+  def div([html: html]) do
+    EEx.eval_string """
+
+    <div class="slide">
+      <%= html %>
+    </div>
+    """, [html: html]
+  end
+
   def div([code: code]) do
     EEx.eval_string """
 
@@ -25,7 +34,6 @@ defmodule Presentex do
       <h3><%= subtitle %></h3>
     </div>
     """, args
-
   end
 
   def div(args = [title: title]) do
@@ -35,7 +43,6 @@ defmodule Presentex do
       <h1 class="title"><%= title %></h1>
     </div>
     """, args
-
   end
 
   def div(args = [blockquote: blockquote, author: author]) do
@@ -123,6 +130,14 @@ defmodule Main do
       [blockquote: "To code, or not to code. That is a dumb question.", author: "Bryan Weber"],
 
       ["foo", "bar", "baz", "quux"],
+
+      [html: """
+
+      <div style="background-color: blue; text-align: center;">
+        <h1 style="color: red;">Custom HTML</h1>
+      </div>
+
+      """],
 
     ]
 
