@@ -17,8 +17,9 @@ Why use Presentex?
 
 ## License Information
 
-* https://github.com/isagalaev/highlight.js/blob/master/LICENSE
-* https://github.com/jquery/jquery/blob/master/LICENSE.txt
+* presentex: [LICENSE](LICENSE)
+* highlight.js: https://github.com/isagalaev/highlight.js/blob/master/LICENSE
+* jQuery: https://github.com/jquery/jquery/blob/master/LICENSE.txt
 
 # Usage
 
@@ -33,7 +34,7 @@ connection is required.
 
 ## Slides
 
-The slides all belong in one file.  They are separated by commas. 
+The slides all belong in one file.  They are separated by commas.
 
 View a sample slide file at [test/sample_slides.ex](test/sample_slides.ex)
 

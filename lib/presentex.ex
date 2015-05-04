@@ -110,7 +110,7 @@ defmodule Presentex do
 
     File.write!(Path.join(path, "index.html"), content)
 
-    File.cp_r("files", path)
+    File.cp_r("deps/presentex/files", path)
   end
 
 end

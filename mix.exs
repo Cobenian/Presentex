@@ -3,11 +3,14 @@ defmodule Presentex.Mixfile do
 
   def project do
     [app: :presentex,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     description: description,
+     package: package
+     ]
   end
 
   # Configuration for the OTP application
@@ -29,4 +32,19 @@ defmodule Presentex.Mixfile do
   defp deps do
     []
   end
+
+  defp description do
+    """
+    An Elixir -> HTML/JavaScript presentation generation tool.
+    """
+  end
+
+  defp package do
+      [# These are the default files included in the package
+       files: ["lib", "files", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*", "*LICENSE"],
+       contributors: ["Bryan Weber"],
+       licenses: ["Apache 2.0"],
+       links: %{"GitHub" => "https://github.com/Cobenian/Presentex"}]
+  end
+
 end

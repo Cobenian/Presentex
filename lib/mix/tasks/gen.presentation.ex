@@ -9,7 +9,7 @@ defmodule Mix.Tasks.Gen.Presentation do
   """
   def run(args) do
     require Source
-
+  
     unless Enum.count(args) == 2 do
       Mix.raise "You must provide the directory where the presentation will be
       created and the file that contains the slide data."
