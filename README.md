@@ -115,6 +115,10 @@ The slide types are:
 
 ## Release Notes
 
+### 0.0.4
+
+Added documentation
+
 ### 0.0.3
 
 Added [elixir: "<source>"] slide type.

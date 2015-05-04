@@ -1,4 +1,15 @@
 defmodule Source do
+
+  @shortdoc "Provides a macro to inspect source code rather than execute it"
+
+  @moduledoc """
+  Provides a macro to inspect source code rather than execute it
+  """
+
+  @doc """
+  This macro does not execute the code that is passed in, rather it returns the
+  source so that it can be shown in the presentation.
+  """
   defmacro code(src) do
     [code: Macro.to_string(src)]
   end
@@ -6,6 +17,17 @@ end
 
 defmodule Presentex do
 
+  @shortdoc "Presentex generates HTML presentations for Elixir code"
+
+  @moduledoc """
+    Presentex generates an index.html file that is the presentation for the
+    slides passed in.
+  """
+
+  @doc """
+  Generates the slide div element that will show the Elixir source code with
+  syntax highlighting.
+  """
   def div([elixir: elixir]) do
     EEx.eval_string """
 
@@ -14,9 +36,12 @@ defmodule Presentex do
       <%= elixir %>
       </code></pre>
     </div>
-    """, [elixir: elixir]    
+    """, [elixir: elixir]
   end
 
+  @doc """
+  Generates the slide div element that will show the raw HTML.
+  """
   def div([html: html]) do
     EEx.eval_string """
 
@@ -26,6 +51,10 @@ defmodule Presentex do
     """, [html: html]
   end
 
+  @doc """
+  Generates the slide div element that will show the Elixir source code with
+  syntax highlighting.
+  """
   def div([code: code]) do
     EEx.eval_string """
 
@@ -37,6 +66,9 @@ defmodule Presentex do
     """, [code: code]
   end
 
+  @doc """
+  Generates the slide div element that will show the title and subtitle.
+  """
   def div(args = [title: title, subtitle: subtitle]) do
     EEx.eval_string """
 
@@ -47,6 +79,9 @@ defmodule Presentex do
     """, args
   end
 
+  @doc """
+  Generates the slide div element that will show a really large title.
+  """
   def div(args = [title: title]) do
     EEx.eval_string """
 
@@ -56,6 +91,9 @@ defmodule Presentex do
     """, args
   end
 
+  @doc """
+  Generates the slide div element that will show a quote and attribute it.
+  """
   def div(args = [blockquote: blockquote, author: author]) do
     EEx.eval_string """
 
@@ -68,6 +106,9 @@ defmodule Presentex do
     """, args
   end
 
+  @doc """
+  Generates the slide div element that will show a paragraph of text.
+  """
   def div(s) when is_binary(s) do
     EEx.eval_string """
 
@@ -77,6 +118,9 @@ defmodule Presentex do
     """, [s: s]
   end
 
+  @doc """
+  Generates the slide div element that will show a bulleted list of items.
+  """
   def div(items) when is_list(items) do
     EEx.eval_string """
 
@@ -90,6 +134,9 @@ defmodule Presentex do
     """, [items: items]
   end
 
+  @doc """
+  Generates the content of the index.html file.
+  """
   def index(slides, style \\ "idea") do
     EEx.eval_string """
     <html>
@@ -114,6 +161,10 @@ defmodule Presentex do
     """, [slides: slides, style: style]
   end
 
+  @doc """
+  Generates the index.html file and copies the other JavaScript and CSS files
+  to the destination directory.
+  """
   def gen(path, slides) do
     require Source
 
