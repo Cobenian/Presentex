@@ -37,26 +37,37 @@ The slides all belong in one file.  They are separated by commas. The slide type
 
 ### Title with subtitle
 
+```elixir
   [title: "Elixir for noobs", subtitle: "A better way to program"]
+```
 
 ### Title only
 
+```elixir
   [title: "New Features"]
+```
 
 ### Paragraph of text
 
+```elixir
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+```
 
 ### Bullet list of items
 
+```elixir
   ["Improved error handling", "Fixed memory leak in mysql driver", "Added UTF-8 support in library"]
+```
 
 ### A quote
 
+```elixir
   [blockquote: "To code, or not to code. That is a dumb question.", author: "Bryan Weber"]
+```
 
 ### Elixir code
 
+```elixir
   Source.code(
 
       defmodule Ticket do
@@ -68,9 +79,12 @@ The slides all belong in one file.  They are separated by commas. The slide type
       end
 
   )
+```
 
 ### Raw HTML
 
+```html
   <div>
     <blink>We don't miss these days...</blink>
   </div>
+```
