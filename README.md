@@ -50,19 +50,22 @@ The slides all belong in one file.  They are separated by commas. The slide type
 ### Paragraph of text
 
 ```elixir
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua."
 ```
 
 ### Bullet list of items
 
 ```elixir
-  ["Improved error handling", "Fixed memory leak in mysql driver", "Added UTF-8 support in library"]
+  ["Improved error handling", "Fixed memory leak in mysql driver",
+    "Added UTF-8 support in library"]
 ```
 
 ### A quote
 
 ```elixir
-  [blockquote: "To code, or not to code. That is a dumb question.", author: "Bryan Weber"]
+  [blockquote: "To code, or not to code. That is a dumb question.",
+    author: "Bryan Weber"]
 ```
 
 ### Elixir code
