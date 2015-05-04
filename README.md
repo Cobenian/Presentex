@@ -27,7 +27,7 @@ Add the dependency to your mix.exs file:
 
 ```elixir
   defp deps do
-    [{:presentex, "~> 0.0.3"}]
+    [{:presentex, "~> 0.0.4"}]
   end
 ```
 
