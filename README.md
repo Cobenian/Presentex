@@ -27,7 +27,7 @@ Add the dependency to your mix.exs file:
 
 ```elixir
   defp deps do
-    [{:presentex, "~> 0.0.2"}]
+    [{:presentex, "~> 0.0.3"}]
   end
 ```
 
@@ -112,3 +112,17 @@ The slide types are:
     <blink>We don't miss these days...</blink>
   </div>
 ```
+
+## Release Notes
+
+### 0.0.3
+
+Added [elixir: "<source>"] slide type.
+
+### 0.0.2
+
+Added mix task that generates the presentation based on the slides input.
+
+### 0.0.1
+
+Buggy release, do NOT use this version.

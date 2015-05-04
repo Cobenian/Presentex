@@ -7,6 +7,16 @@ Source.code(
   end
 ),
 
+[elixir: """
+
+defmodule Bar do
+  def baz(quux) do
+    IO.puts "could not find \#{quux}"
+  end
+end
+
+"""],
+
 "One awesome slide",
 
 [title: "Big deal"],

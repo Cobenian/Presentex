@@ -6,6 +6,17 @@ end
 
 defmodule Presentex do
 
+  def div([elixir: elixir]) do
+    EEx.eval_string """
+
+    <div class="slide">
+      <pre><code class="elixir">
+      <%= elixir %>
+      </code></pre>
+    </div>
+    """, [elixir: elixir]    
+  end
+
   def div([html: html]) do
     EEx.eval_string """
 
