@@ -23,6 +23,14 @@ Why use Presentex?
 
 # Usage
 
+Add the dependency to your mix.exs file:
+
+  defp deps do
+    [{:presentex, "~> 0.0.2"}]
+  end
+
+Make sure that you do not use version 0.0.1, it will not work.
+
   Do *NOT* use version 0.0.1, it is known to be buggy.
 
 You can create Presentex presentations using the standard Elixir tool mix.
