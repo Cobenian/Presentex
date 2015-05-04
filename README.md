@@ -23,6 +23,8 @@ Why use Presentex?
 
 # Usage
 
+  Do *NOT* use version 0.0.1, it is known to be buggy.
+
 You can create Presentex presentations using the standard Elixir tool mix.
 
 * Create a mix project if you don't have one already
