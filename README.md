@@ -27,7 +27,7 @@ Add the dependency to your mix.exs file:
 
 ```elixir
   defp deps do
-    [{:presentex, "~> 0.0.4"}]
+    [{:presentex, "~> 0.0.5"}]
   end
 ```
 
@@ -114,6 +114,10 @@ The slide types are:
 ```
 
 ## Release Notes
+
+### 0.0.5
+
+Fixed a formatting issue with Elixir source code.
 
 ### 0.0.4
 

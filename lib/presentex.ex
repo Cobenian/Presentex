@@ -33,7 +33,7 @@ defmodule Presentex do
 
     <div class="slide">
       <pre><code class="elixir">
-      <%= elixir %>
+<%= elixir %>
       </code></pre>
     </div>
     """, [elixir: elixir]
