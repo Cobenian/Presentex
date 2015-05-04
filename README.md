@@ -33,7 +33,13 @@ connection is required.
 
 ## Slides
 
-The slides all belong in one file.  They are separated by commas. The slide types are:
+The slides all belong in one file.  They are separated by commas. 
+
+View a sample slide file at [test/sample_slides.ex](test/sample_slides.ex)
+
+The generated output of test/sample_slides.ex is also checked in under the [sample](sample) directory.
+
+The slide types are:
 
 ### Title with subtitle
 
