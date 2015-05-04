@@ -1,0 +1,86 @@
+.slide {
+    display: none;
+
+    height: 60%;
+    width: 80%;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 20px;
+
+    font-size: 30px;
+
+}
+
+pre {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slide code {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-top: 15%;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 80px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  margin-left: 30%;
+}
+
+blockquote:before {
+  content: "\"";
+  font-size: 80px;
+  color: gray;
+}
+
+blockquote:after {
+  content: "\"";
+  font-size: 80px;
+  color: gray;
+}
+
+.author:before {
+  content: "- ";
+}
+
+.author {
+  margin-left: 60%;
+
+}
