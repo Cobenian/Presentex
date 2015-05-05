@@ -30,7 +30,7 @@ end
 [html: """
 
 <div style="background-color: blue; text-align: center;">
-  <h1 style="color: red;">Custom HTML</h1>
+  <h3 style="color: red;">Custom HTML</h3>
 </div>
 
 """],
