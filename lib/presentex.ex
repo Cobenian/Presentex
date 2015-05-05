@@ -97,11 +97,11 @@ defmodule Presentex do
   @doc """
   Generates the slide div element that will show a really large title.
   """
-  def div(args = [title: title]) do
+  def div(args = [heading: heading]) do
     EEx.eval_string """
 
     <div class="slide">
-      <h1 class="title"><%= title %></h1>
+      <h3><%= heading %></h3>
     </div>
     """, args
   end
@@ -188,7 +188,7 @@ defmodule Presentex do
 
     File.write!(Path.join(path, "index.html"), content)
 
-    # File.cp_r("files", path) # for local dev/testing only
+    File.cp_r("files", path) # for local dev/testing only
     File.cp_r("deps/presentex/files", path)
   end
 

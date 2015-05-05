@@ -19,7 +19,7 @@ end
 
 "One awesome slide",
 
-[title: "Big deal"],
+[heading: "Big deal"],
 
 [title: "Cool", subtitle: "more details"],
 

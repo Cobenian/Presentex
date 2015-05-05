@@ -29,7 +29,7 @@ Add the dependency to your mix.exs file:
 
 ```elixir
   defp deps do
-    [{:presentex, "~> 0.0.8"}]
+    [{:presentex, "~> 0.0.10"}]
   end
 ```
 
@@ -64,10 +64,10 @@ The slide types are:
   [title: "Elixir for noobs", subtitle: "A better way to program"]
 ```
 
-### Title only
+### Heading
 
 ```elixir
-  [title: "New Features"]
+  [heading: "New Features"]
 ```
 
 ### Paragraph of text
@@ -160,6 +160,10 @@ The list of supported languages can be found at [highlight.js](http://highlightj
 ```
 
 ## Release Notes
+
+### 0.0.10
+
+Changing title only slide type to heading.
 
 ### 0.0.9
 
