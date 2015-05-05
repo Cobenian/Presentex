@@ -3,7 +3,7 @@ defmodule Presentex.Mixfile do
 
   def project do
     [app: :presentex,
-     version: "0.0.6",
+     version: "0.0.7",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,

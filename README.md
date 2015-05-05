@@ -28,7 +28,7 @@ Add the dependency to your mix.exs file:
 
 ```elixir
   defp deps do
-    [{:presentex, "~> 0.0.6"}]
+    [{:presentex, "~> 0.0.7"}]
   end
 ```
 
@@ -115,6 +115,10 @@ The slide types are:
 ```
 
 ## Release Notes
+
+### 0.0.7
+
+Fixing the css so flowtype.js actually resizes text.
 
 ### 0.0.6
 
