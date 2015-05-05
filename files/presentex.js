@@ -28,3 +28,5 @@ $("body").keydown(function(e) {
 });
 
 $(".slide").first().show();
+
+$('body').flowtype();

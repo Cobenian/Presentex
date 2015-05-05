@@ -142,7 +142,7 @@ defmodule Presentex do
     <html>
     <head>
       <link rel="stylesheet" href="styles/<%= style %>.css">
-      <link rel="stylesheet" href="present.css">
+      <link rel="stylesheet" href="presentex.css">
 
     </head>
     <body>
@@ -154,7 +154,8 @@ defmodule Presentex do
       <script src="./highlight.pack.js"></script>
       <script>hljs.initHighlightingOnLoad();</script>
       <script src="./jquery-2.1.3.min.js"></script>
-      <script src="./present.js"></script>
+      <script src="./flowtype.js"></script>
+      <script src="./presentex.js"></script>
     </body>
     </html>
 

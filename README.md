@@ -20,6 +20,7 @@ Why use Presentex?
 * presentex: [LICENSE](LICENSE)
 * highlight.js: https://github.com/isagalaev/highlight.js/blob/master/LICENSE
 * jQuery: https://github.com/jquery/jquery/blob/master/LICENSE.txt
+* flowtype.js: https://github.com/simplefocus/FlowType.JS/blob/master/LICENSE.txt
 
 # Usage
 
@@ -27,7 +28,7 @@ Add the dependency to your mix.exs file:
 
 ```elixir
   defp deps do
-    [{:presentex, "~> 0.0.5"}]
+    [{:presentex, "~> 0.0.6"}]
   end
 ```
 
@@ -114,6 +115,10 @@ The slide types are:
 ```
 
 ## Release Notes
+
+### 0.0.6
+
+Added flowtype.js for smarter font size handling.
 
 ### 0.0.5
 
