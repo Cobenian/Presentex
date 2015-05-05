@@ -135,7 +135,7 @@ There are three different ways to include Elixir code.
 
 ### Source Code (for languages other than Elixir)
 
-The list of supported languages can be found at [highlight.js](https://highlightjs.org/download/)
+The list of supported languages can be found at [highlight.js](http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html)
 
 ```elixir
   [code: """
