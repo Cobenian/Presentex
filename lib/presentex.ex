@@ -52,6 +52,21 @@ defmodule Presentex do
   end
 
   @doc """
+  Generates the slide div element that will show the source code with
+  syntax highlighting.
+  """
+  def div([code: code, lang: lang]) do
+    EEx.eval_string """
+
+    <div class="slide">
+      <pre><code class="<%= lang %>">
+<%= code %>
+      </code></pre>
+    </div>
+    """, [code: code, lang: lang]
+  end
+
+  @doc """
   Generates the slide div element that will show the Elixir source code with
   syntax highlighting.
   """
@@ -73,8 +88,8 @@ defmodule Presentex do
     EEx.eval_string """
 
     <div class="slide">
-      <h1><%= title %></h1>
-      <h3><%= subtitle %></h3>
+      <h2><%= title %></h2>
+      <h5><%= subtitle %></h5>
     </div>
     """, args
   end
@@ -173,7 +188,7 @@ defmodule Presentex do
 
     File.write!(Path.join(path, "index.html"), content)
 
-    File.cp_r("files", path)
+    # File.cp_r("files", path) # for local dev/testing only
     File.cp_r("deps/presentex/files", path)
   end
 
