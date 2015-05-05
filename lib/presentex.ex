@@ -152,7 +152,7 @@ defmodule Presentex do
   @doc """
   Generates the content of the index.html file.
   """
-  def index(slides, style \\ "idea") do
+  def index(slides, style \\ "tomorrow") do # other decent defaults are idea and github
     EEx.eval_string """
     <html>
     <head>

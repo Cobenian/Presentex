@@ -37,10 +37,10 @@ end
 
 [code: """
 PrepareAlarm = fun(Room) ->
-    io:format("Alarm set in ~s.~n",[Room]),
-    fun() -> io:format(
-               "Alarm tripped in ~s! Call Batman!~n",
-               [Room])
-    end
+  io:format("Alarm set in ~s.~n",[Room]),
+  fun() -> io:format(
+    "Alarm tripped in ~s! Call Batman!~n",
+    [Room])
+  end
 end.
 """, lang: "erlang"]

@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" href="styles/idea.css">
+  <link rel="stylesheet" href="styles/tomorrow.css">
   <link rel="stylesheet" href="presentex.css">
 
 </head>
@@ -49,8 +49,8 @@ end
   
   
 <div class="slide">
-  <h1>Cool</h1>
-  <h3>more details</h3>
+  <h2>Cool</h2>
+  <h5>more details</h5>
 </div>
 
   
@@ -87,6 +87,21 @@ end
 </div>
 
 
+</div>
+
+  
+  
+<div class="slide">
+  <pre><code class="erlang">
+PrepareAlarm = fun(Room) ->
+  io:format("Alarm set in ~s.~n",[Room]),
+  fun() -> io:format(
+    "Alarm tripped in ~s! Call Batman!~n",
+    [Room])
+  end
+end.
+
+  </code></pre>
 </div>
 
   

@@ -10,6 +10,7 @@ Why use Presentex?
 * It has only TWO dependencies
   * jQuery
   * highlight.js
+  * flowtype.js
 * It has a very simple way to provide Elixir code samples
 * It uses a larger default font size than most presentation frameworks
 * All slides are generated from Elixir data structures
@@ -92,6 +93,8 @@ The slide types are:
 
 ### Elixir code
 
+There are three different ways to include Elixir code.
+
 ```elixir
   Source.code(
 
@@ -106,6 +109,48 @@ The slide types are:
   )
 ```
 
+```elixir
+  [elixir: """
+
+  defmodule Foo do
+    def bar do
+      IO.puts "quux"
+    end
+  end
+
+  """]
+```
+
+```elixir
+  [code: """
+
+  defmodule Foo do
+    def bar do
+      IO.puts "quux"
+    end
+  end
+
+  """]
+```
+
+### Source Code (for languages other than Elixir)
+
+The list of supported languages can be found at [highlight.js](https://highlightjs.org/download/)
+
+```elixir
+  [code: """
+
+  PrepareAlarm = fun(Room) ->
+      io:format("Alarm set in ~s.~n",[Room]),
+      fun() -> io:format(
+                 "Alarm tripped in ~s! Call Batman!~n",
+                 [Room])
+      end
+  end.
+
+  """, lang: "erlang"]
+```
+
 ### Raw HTML
 
 ```html
@@ -115,6 +160,10 @@ The slide types are:
 ```
 
 ## Release Notes
+
+### 0.0.9
+
+Changing default style from 'idea' to 'tomorrow'.
 
 ### 0.0.8
 
