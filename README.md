@@ -7,7 +7,7 @@ Why use Presentex?
 
 * It has very simple understandable HTML, CSS and JavaScript
 * It works offline
-* It has only TWO dependencies
+* It has only three dependencies
   * jQuery
   * highlight.js
   * flowtype.js
